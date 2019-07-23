@@ -29,7 +29,8 @@ namespace Ultz.Logger
                 .Replace("MI", DateTime.Now.ToString("mm"))
                 .Replace("SS", DateTime.Now.ToString("ss"))
                 .Replace("EVENT_ID", $"[{eventId.Name}/{eventId.Id}]")
-                .Replace("MSG", formatter(state, exception));
+                .Replace("MSG", formatter(state, exception))
+                .Replace("LVL", GetLevel(logLevel));
             Writers.ForEach(x => x.WriteLine(msg));
         }
 
