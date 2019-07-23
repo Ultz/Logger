@@ -1,9 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <Version>1.0.0</Version>
+        <Version>1.0.2</Version>
         <Description>An actually good Microsoft logger.</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/Ultz/Logger</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
